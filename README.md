@@ -1,6 +1,24 @@
-# FastAPI E-Commerce Learning Resource 🚀
+# FastAPI Learning Resource 🚀
 
 **A comprehensive, self-service tutorial for building production-ready REST APIs with FastAPI**
+
+## 🚀 How to Use This Resource
+
+### **📖 For Self-Learners**
+1. **Sequential Learning**: Follow chapters 1-8 in order for complete mastery
+2. **Hands-on Practice**: Type out all code examples yourself  
+3. **Experiment**: Try modifications and see what happens
+4. **Build Projects**: Complete all exercises and challenges
+
+### **🎓 For Instructors**
+1. **Workshop Format**: Each chapter can be a 2-3 hour session
+2. **Code-Along**: Lead students through examples step-by-step
+3. **Assessment**: Use chapter exercises for evaluation
+
+### **👥 For Teams**
+1. **Onboarding**: Use as training material for new developers
+2. **Standards**: Adopt patterns and practices from this tutorial
+3. **Architecture Reference**: Use project structure as template
 
 ## 🎯 Who This Resource Is For
 
@@ -207,110 +225,6 @@ Each chapter offers **two independent tutorials**:
 - Production configuration
 - Deployment preparation
 
----
-
-### [Chapter 2: FastAPI Fundamentals](docs/02-fundamentals.md)
-**What you'll learn:**
-- Request and Response models with Pydantic
-- Path parameters and query parameters
-- Request body handling
-- HTTP status codes and error responses
-- Async/await in FastAPI
-
-**Key Concepts:**
-- Type hints and validation
-- Pydantic models
-- Dependency injection basics
-- API documentation generation
-
----
-
-### [Chapter 3: Core CRUD Operations](docs/03-crud-operations.md)
-**What you'll learn:**
-- Building REST API endpoints (GET, POST, PUT, DELETE)
-- Data validation and serialization
-- Error handling and custom exceptions
-- Response models and status codes
-- API versioning basics
-
-**Hands-on Project:** Build a simple task management API
-
----
-
-### [Chapter 4: Database Integration](docs/04-database-setup.md)
-**What you'll learn:**
-- Installing and configuring PostgreSQL locally
-- SQLModel for database operations
-- Database connection and session management
-- Creating and managing database models
-- Database migrations and schema updates
-
-**Key Concepts:**
-- ORM vs Raw SQL
-- Database sessions and dependency injection
-- Connection pooling
-- Environment-based configuration
-
----
-
-### [Chapter 5: E-Commerce API Development](docs/05-ecommerce-api.md)
-**What you'll learn:**
-- Designing API architecture
-- Implementing user management system
-- Building product catalog with categories
-- Creating order processing system
-- Developing customer support features
-
-**Project Modules:**
-1. **Users API** - Registration, profiles, user management
-2. **Products API** - Catalog, categories, search functionality
-3. **Orders API** - Shopping cart, checkout, order tracking
-4. **Support API** - Ticket system, customer communications
-
----
-
-### [Chapter 6: Advanced Features](docs/06-advanced-features.md)
-**What you'll learn:**
-- JWT authentication and authorization
-- File upload handling (product images)
-- Pagination and filtering
-- Background tasks and queues
-- Advanced validation and custom validators
-- API rate limiting
-
-**Advanced Topics:**
-- Middleware implementation
-- Custom decorators
-- Performance optimization
-- Caching strategies
-
----
-
-### [Chapter 7: Testing & Quality Assurance](docs/07-testing.md)
-**What you'll learn:**
-- Unit testing with pytest
-- Integration testing for APIs
-- Database testing strategies
-- Test fixtures and mocking
-- Test coverage and reporting
-- Automated testing workflows
-
-**Testing Approach:**
-- Test-driven development (TDD) principles
-- Testing database operations
-- API endpoint testing
-- Authentication testing
-
----
-
-### [Chapter 8: Local Production Deployment](docs/08-local-production.md)
-**What you'll learn:**
-- Environment configuration management
-- Production-grade logging
-- Health checks and monitoring
-- Performance tuning
-- Security best practices
-- Running with Uvicorn in production mode
 
 ## 🚀 Quick Start
 
@@ -541,26 +455,6 @@ fastapi-ecommerce-tutorial/
 - **passlib**: Password hashing
 - **bcrypt**: Secure password hashing algorithm
 
-## 📖 How to Use This Resource
-
-### For Self-Learners:
-1. **Sequential Learning**: Follow chapters 1-8 in order
-2. **Hands-on Practice**: Type out all code examples yourself
-3. **Experiment**: Try modifications and see what happens
-4. **Build Projects**: Complete all exercises and challenges
-5. **Reference**: Use this as a reference for future projects
-
-### For Instructors:
-1. **Workshop Format**: Each chapter can be a 2-3 hour session
-2. **Code-Along**: Lead students through examples step-by-step
-3. **Assessment**: Use chapter exercises for evaluation
-4. **Extended Projects**: Assign additional features to build
-
-### For Teams:
-1. **Onboarding**: Use as training material for new developers
-2. **Standards**: Adopt patterns and practices from this tutorial
-3. **Architecture Reference**: Use project structure as template
-4. **Code Reviews**: Reference best practices during reviews
 
 ## 🤝 How to Contribute
 
