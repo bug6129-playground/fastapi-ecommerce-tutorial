@@ -1,0 +1,56 @@
+# FastAPI E-Commerce Tutorial - Production Dependencies
+# =====================================================
+# This file contains all the dependencies needed to run the FastAPI application in production
+
+# Core FastAPI Framework
+# FastAPI - Modern, fast web framework for building APIs with Python 3.8+
+# Includes Starlette for the web parts and Pydantic for the data parts
+fastapi==0.104.1
+
+# ASGI Server
+# Uvicorn - Lightning-fast ASGI server implementation, using uvloop and httptools
+uvicorn[standard]==0.24.0
+
+# Database ORM and Connection
+# SQLModel - SQL database integration for FastAPI, built on SQLAlchemy and Pydantic
+sqlmodel==0.0.14
+
+# PostgreSQL Database Adapter
+# psycopg2-binary - PostgreSQL adapter for Python, binary version for easier installation
+psycopg2-binary==2.9.9
+
+# Authentication and Security
+# python-jose - JavaScript Object Signing and Encryption (JOSE) implementation in Python
+python-jose[cryptography]==3.3.0
+
+# Password Hashing
+# passlib - Comprehensive password hashing library with support for over 30 schemes
+passlib[bcrypt]==1.7.4
+
+# Environment Variables Management
+# python-decouple - Strict separation of settings from code
+python-decouple==3.8
+
+# Data Validation and Settings Management
+# pydantic - Data validation and settings management using Python type annotations
+pydantic[email]==2.5.0
+
+# HTTP Client for External API Calls (optional, for payment gateways, etc.)
+# httpx - A fully featured HTTP client for Python 3, which provides sync and async APIs
+httpx==0.25.2
+
+# File Upload Support
+# python-multipart - A streaming multipart parser for Python
+python-multipart==0.0.6
+
+# Date and Time Utilities
+# python-dateutil - Extensions to the standard Python datetime module
+python-dateutil==2.8.2
+
+# YAML Configuration Support
+# PyYAML - YAML parser and emitter for Python (for config.yaml)
+PyYAML==6.0.1
+
+# Additional Utilities
+# email-validator - A robust email address syntax and deliverability validation library
+email-validator==2.1.0

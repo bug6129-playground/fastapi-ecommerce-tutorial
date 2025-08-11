@@ -1,0 +1,69 @@
+# FastAPI E-Commerce Tutorial - Development Dependencies
+# =====================================================
+# This file contains additional dependencies needed for development, testing, and code quality
+
+# Include all production dependencies
+-r requirements.txt
+
+# Testing Framework
+# pytest - The pytest framework makes it easy to write small, readable tests
+pytest==7.4.3
+
+# Async Testing Support
+# pytest-asyncio - Pytest plugin for testing asyncio code
+pytest-asyncio==0.21.1
+
+# HTTP Testing Client
+# httpx - Also used for testing API endpoints with TestClient
+# (already included in requirements.txt, but noted here for testing context)
+
+# Test Coverage
+# pytest-cov - Coverage plugin for pytest
+pytest-cov==4.1.0
+
+# Code Formatting
+# black - The uncompromising Python code formatter
+black==23.11.0
+
+# Import Sorting
+# isort - A Python utility to sort imports alphabetically and automatically separate them into sections
+isort==5.12.0
+
+# Linting
+# flake8 - Tool for style guide enforcement
+flake8==6.1.0
+
+# Type Checking
+# mypy - Optional static type checker for Python
+mypy==1.7.1
+
+# Pre-commit Hooks (optional, for automated code quality)
+# pre-commit - A framework for managing and maintaining multi-language pre-commit hooks
+pre-commit==3.6.0
+
+# Development Server Hot Reload Enhancement
+# watchdog - Python API library and shell utilities to monitor file system events
+watchdog==3.0.0
+
+# Database Testing
+# pytest-postgresql - PostgreSQL process and client fixtures for pytest
+pytest-postgresql==5.0.0
+
+# Fake Data Generation for Testing
+# faker - A Python package that generates fake data
+faker==20.1.0
+
+# Environment File Support for Development
+# python-dotenv - Read key-value pairs from a .env file and add them as environment variables
+python-dotenv==1.0.0
+
+# API Documentation Testing
+# requests - Simple, yet elegant HTTP library (for testing external integrations)
+requests==2.31.0
+
+# Development Utilities
+# ipython - Enhanced interactive Python shell (useful for debugging)
+ipython==8.17.2
+
+# Rich - Rich is a Python library for rich text and beautiful formatting in the terminal
+rich==13.7.0

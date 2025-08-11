@@ -1,0 +1,212 @@
+# FastAPI E-Commerce Tutorial - Configuration File
+# ================================================
+# This YAML file contains all application configuration settings.
+# Users can easily modify these settings without changing any code.
+#
+# Author: bug6129
+
+# Application Configuration
+# ========================
+app:
+  name: "FastAPI E-Commerce API"
+  version: "1.0.0"
+  description: "A comprehensive e-commerce API built with FastAPI"
+  environment: "development"  # development, staging, production
+  debug: true
+
+# Server Configuration  
+# ===================
+server:
+  host: "127.0.0.1"  # Use 0.0.0.0 to allow external connections
+  port: 8000
+  reload: true       # Auto-reload on code changes (development only)
+
+# Database Configuration
+# =====================
+database:
+  host: "localhost"
+  port: 5432
+  name: "fastapi_ecommerce"
+  username: "fastapi_user"
+  password: "changeme"
+  
+  # Connection pool settings
+  pool_size: 20
+  max_overflow: 0
+  pool_timeout: 30
+  
+  # Test database (used during testing)
+  test_db_name: "fastapi_ecommerce_test"
+
+# Security Configuration
+# ======================
+security:
+  secret_key: "your-secret-key-change-this-in-production-make-it-long-and-random"
+  algorithm: "HS256"
+  access_token_expire_minutes: 30
+  
+  # Password hashing
+  bcrypt_rounds: 12
+
+# CORS (Cross-Origin Resource Sharing) Configuration
+# =================================================
+cors:
+  allowed_origins:
+    - "http://localhost:3000"
+    - "http://localhost:8080" 
+    - "http://127.0.0.1:3000"
+  allowed_methods:
+    - "GET"
+    - "POST" 
+    - "PUT"
+    - "DELETE"
+    - "OPTIONS"
+  allowed_headers:
+    - "*"
+  allow_credentials: true
+
+# File Upload Configuration
+# ========================
+file_upload:
+  max_size_mb: 5  # Maximum file size in megabytes
+  allowed_extensions:
+    - "jpg"
+    - "jpeg" 
+    - "png"
+    - "gif"
+    - "webp"
+  upload_directory: "uploads"
+  
+# Email Configuration (for notifications, password reset, etc.)
+# ===========================================================
+email:
+  smtp_server: null      # e.g., "smtp.gmail.com"
+  smtp_port: 587
+  username: null         # Your email username
+  password: null         # Your email password or app password
+  from_address: "noreply@fastapi-ecommerce.com"
+  use_tls: true
+
+# Logging Configuration
+# ====================
+logging:
+  level: "INFO"          # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: null             # Set to a filename to log to file, null for console only
+  max_file_size_mb: 10   # Maximum log file size before rotation
+  backup_count: 5        # Number of backup log files to keep
+
+# API Documentation Configuration
+# ==============================
+docs:
+  title: "FastAPI E-Commerce API"
+  description: |
+    A comprehensive e-commerce API built with FastAPI for learning purposes.
+    
+    ## Features
+    - User authentication and authorization
+    - Product catalog management
+    - Order processing and tracking
+    - Customer support system
+    - File upload capabilities
+    
+    ## Getting Started
+    1. Register a new user account
+    2. Browse products and categories
+    3. Add items to cart and place orders
+    4. Track order status and history
+  version: "1.0.0"
+  contact:
+    name: "bug6129"
+    email: "support@example.com"
+  license:
+    name: "MIT"
+    url: "https://opensource.org/licenses/MIT"
+
+# Rate Limiting Configuration
+# ==========================
+rate_limiting:
+  enabled: true
+  requests_per_minute: 60      # Per IP address
+  requests_per_hour_user: 1000 # Per authenticated user
+
+# Cache Configuration (for future use)
+# ===================================
+cache:
+  enabled: false
+  redis_url: null              # e.g., "redis://localhost:6379/0"
+  default_timeout: 300         # Default cache timeout in seconds
+
+# Payment Configuration (for future implementation)
+# ================================================
+payments:
+  # Stripe configuration
+  stripe:
+    publishable_key: null      # Stripe publishable key
+    secret_key: null           # Stripe secret key
+    webhook_secret: null       # Stripe webhook secret
+  
+  # PayPal configuration  
+  paypal:
+    client_id: null            # PayPal client ID
+    client_secret: null        # PayPal client secret
+    mode: "sandbox"            # sandbox or live
+
+# External Services Configuration
+# ==============================
+external_services:
+  # Google Maps (for address validation, shipping calculations)
+  google_maps:
+    api_key: null
+  
+  # Email service (alternative to SMTP)
+  sendgrid:
+    api_key: null
+
+# Feature Flags
+# =============
+features:
+  enable_user_registration: true
+  enable_email_verification: false
+  enable_password_reset: true
+  enable_file_upload: true
+  enable_order_tracking: true
+  enable_customer_support: true
+  enable_product_reviews: true
+  enable_wishlist: false
+  enable_coupons: false
+  enable_inventory_tracking: true
+
+# Development Settings
+# ===================
+development:
+  # Seed data for development
+  create_sample_data: true
+  sample_users_count: 10
+  sample_products_count: 50
+  sample_orders_count: 20
+  
+  # Auto-create admin user
+  admin_user:
+    email: "admin@example.com"
+    password: "admin123"
+    first_name: "Admin"
+    last_name: "User"
+
+# Testing Configuration
+# ====================
+testing:
+  # Override settings for tests
+  database_url: "postgresql://fastapi_user:changeme@localhost:5432/fastapi_ecommerce_test"
+  secret_key: "test-secret-key-for-testing-only"
+  
+# Production Settings (override for production)
+# =============================================
+production:
+  debug: false
+  server:
+    host: "0.0.0.0"
+    reload: false
+  logging:
+    level: "WARNING"
+    file: "logs/app.log"

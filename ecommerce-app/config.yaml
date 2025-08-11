@@ -1,0 +1,82 @@
+# FastAPI E-Commerce API - Configuration
+# =====================================
+
+# Application Information
+app:
+  name: "FastAPI E-Commerce API"
+  version: "1.0.0"
+  description: "A comprehensive e-commerce API built with FastAPI"
+  environment: "development"
+  debug: true
+
+# Server Configuration
+server:
+  host: "127.0.0.1"
+  port: 8000
+  reload: true
+
+# API Documentation
+docs:
+  title: "FastAPI E-Commerce API"
+  description: |
+    A comprehensive e-commerce API built with FastAPI for learning and production.
+    
+    ## Features
+    - 👥 User Management - Registration, authentication, profiles
+    - 🛍️ Product Catalog - Products, categories, inventory
+    - 🛒 Shopping Cart - Add items, manage quantities
+    - 📦 Order Processing - Checkout, payment, fulfillment
+    - 🎧 Customer Support - Help tickets, communication
+    
+    ## Getting Started
+    1. Register a new user account
+    2. Browse the product catalog  
+    3. Add items to your shopping cart
+    4. Complete the checkout process
+    5. Track your order status
+    
+  version: "1.0.0"
+  contact:
+    name: "bug6129"
+    email: "support@ecommerce-api.com"
+  license:
+    name: "MIT License"
+    url: "https://opensource.org/licenses/MIT"
+
+# CORS Configuration
+cors:
+  allowed_origins:
+    - "http://localhost:3000"
+    - "http://localhost:8080"
+    - "http://127.0.0.1:3000"
+  allowed_methods:
+    - "GET"
+    - "POST"
+    - "PUT"
+    - "DELETE"
+    - "OPTIONS"
+  allowed_headers:
+    - "*"
+  allow_credentials: true
+
+# Feature Flags (we'll implement these in future tutorials)
+features:
+  enable_user_registration: true
+  enable_product_catalog: true
+  enable_shopping_cart: true
+  enable_order_processing: true
+  enable_customer_support: true
+
+# Business Configuration
+business:
+  currency: "USD"
+  tax_rate: 0.08  # 8% tax rate
+  free_shipping_threshold: 50.00
+  max_cart_items: 100
+  order_timeout_minutes: 30
+
+# Development Settings
+development:
+  create_sample_data: true
+  log_sql_queries: false
+  cors_allow_all: true
