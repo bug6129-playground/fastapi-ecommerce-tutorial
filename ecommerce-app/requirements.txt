@@ -3,3 +3,9 @@ fastapi==0.104.1
 uvicorn[standard]==0.24.0
 PyYAML==6.0.1
 pydantic==2.5.0
+
+# Chapter 2: User Management System Dependencies
+pydantic[email]==2.5.0  # Email validation support
+passlib[bcrypt]==1.7.4  # Password hashing with bcrypt
+sqlmodel==0.0.14        # SQL database integration
+sqlalchemy==2.0.23      # Database ORM (required by SQLModel)

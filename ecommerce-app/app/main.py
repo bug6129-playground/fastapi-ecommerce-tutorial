@@ -11,6 +11,8 @@ Author: bug6129
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from .config import settings
+from .database import create_db_and_tables
+from .routers import users
 
 # Create FastAPI application with configuration from YAML
 app = FastAPI(
@@ -30,6 +32,9 @@ app.add_middleware(
     allow_methods=settings.cors.allowed_methods,
     allow_headers=settings.cors.allowed_headers,
 )
+
+# Include routers
+app.include_router(users.router)
 
 # Root endpoint - API information
 @app.get("/", tags=["System"])
@@ -137,7 +142,7 @@ async def api_status():
         ],
         "endpoints_available": {
             "system": ["/", "/health", "/system", "/status"],
-            "users": "Coming in Tutorial 2!",
+            "users": ["/users/register", "/users/login", "/users/{id}", "/users/{id}/profile"],
             "products": "Coming in Tutorial 5!",
             "orders": "Coming in Tutorial 6!",
         },
@@ -162,6 +167,10 @@ async def startup_event():
     print(f"🚀 Starting {settings.app.name} v{settings.app.version}")
     print(f"🌍 Environment: {settings.app.environment}")
     print(f"🔧 Debug mode: {settings.app.debug}")
+    
+    # Initialize database tables
+    create_db_and_tables()
+    print("📊 Database tables initialized")
     
     if settings.development.create_sample_data:
         print("📊 Sample data creation enabled (will implement in future tutorials)")
