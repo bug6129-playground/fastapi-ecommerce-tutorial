@@ -334,14 +334,15 @@ A: Yes! Example: `@app.get("/users/{user_id}/posts/{post_id}")`
 
 ## ➡️ What's Next?
 
-You've learned the basics! In **Tutorial A2: [Pydantic Fundamentals](../02-data-models/learn-pydantic.md)**, you'll discover:
+Great! Now let's put these basics into practice with hands-on examples:
 
-- 📝 **Request and Response Models** - Structure your API data
-- ✅ **Data Validation** - Automatic input validation
-- 🔒 **Type Safety** - Catch errors before they happen
-- 📊 **JSON Schema** - Auto-generated API documentation
+**🎯 Continue Path A - Concept Examples:**
+1. **[Example 01: Hello World](../../examples/01-hello-world/)** - Practice what you just learned
+2. **[Example 02: Pydantic Models](../../examples/02-pydantic-models/)** - Data validation and models
+3. **[Example 03: CRUD Operations](../../examples/03-crud-basics/)** - HTTP methods and operations
 
-Or jump to **Tutorial B1: [E-Commerce Foundation](apply-ecommerce.md)** to start building a real application!
+**🏗️ Or Switch to Path B:**
+Jump to **[Tutorial B1: E-Commerce Foundation](../apply-ecommerce.md)** to start building a real application!
 
 ---
 

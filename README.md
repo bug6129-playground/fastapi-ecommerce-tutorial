@@ -22,8 +22,8 @@
 
 **Option B: Git Clone**
 ```bash
-git clone https://github.com/bug6129/fastapi-learning-resource.git
-cd fastapi-learning-resource
+git clone <your-repository-url>
+cd fastapi-learnings
 ```
 
 ### Step 2: Choose Your Path

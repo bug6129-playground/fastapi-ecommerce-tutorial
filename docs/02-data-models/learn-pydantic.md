@@ -521,13 +521,22 @@ DynamicUser = create_model(
 
 ### **Ready to Apply These Concepts?**
 
-Now that you understand Pydantic fundamentals, you're ready to see how these concepts apply to real-world applications:
+Now that you understand Pydantic fundamentals, choose your learning path:
 
-1. **Continue to Tutorial B2**: [User Management System](apply-user-system.md) - See how these concepts work in a production e-commerce API
+**🎯 Path A - Continue with Examples:**
+Practice these concepts with hands-on code examples:
 
-2. **Practice More**: Try the exercises above and create your own models
+1. **[Example 02: Pydantic Models](../../examples/02-pydantic-models/)** - Complete the Pydantic tutorial with working code
+2. **[Example 03: CRUD Operations](../../examples/03-crud-basics/)** - Use models in API endpoints
+3. **[Example 04: Database Integration](../../examples/04-database-simple/)** - Connect models to databases
 
-3. **Explore Advanced Features**: Look into Pydantic's advanced features like custom types and serializers
+**🏗️ Path B - Build Real Project:**
+Apply these concepts in a production e-commerce system:
+
+1. **[Tutorial B2: User Management System](apply-user-system.md)** - See how these concepts work in a real API
+
+**🧪 Practice More:**
+Try the exercises above and create your own models with custom validation.
 
 ### **Key Takeaways**:
 - **Type hints are essential** - they enable all of Pydantic's magic
@@ -538,6 +547,6 @@ Now that you understand Pydantic fundamentals, you're ready to see how these con
 
 ---
 
-**🎯 Ready to build a real user management system? Continue with [Tutorial B2: User Management System](apply-user-system.md)!**
+**🎯 Ready to practice with working code? Continue with [Example 02: Pydantic Models](../../examples/02-pydantic-models/)!**
 
 *Remember: Pydantic is powerful but intuitive. Start with basic models and add complexity as needed. The automatic validation and documentation make it worth the learning investment!*
